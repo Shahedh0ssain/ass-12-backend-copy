@@ -148,12 +148,13 @@ async function run() {
       { sku: "abc123" },
       { $inc: { quantity: -2, "metrics.orders": 1 } }
     )
+    
 
     // app.deleteOne( { status: "D" } )
  
 
-    // // // Manage product delete api :
-    app.delete('/ourcar/:id', async (req, res) => {
+    // Manage product delete api :
+    app.delete('/ourcar/delete/:id', async (req, res) => {
       const id = req.params.id;
       console.log(id);
       const query = { _id: ObjectId(id) };
