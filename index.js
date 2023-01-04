@@ -13,10 +13,6 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-//uname:project-car
-//mHnTJCZufN9cBqQi
-
-
 
 
 const uri = `mongodb+srv://${process.env.db_user}:${process.env.db_password}@cluster1.wjwlqun.mongodb.net/?retryWrites=true&w=majority`;
@@ -167,8 +163,8 @@ async function run() {
     });
     
 
-       // delete api not working but why i don`t no .
-    // app.delete('/ourcar/:id', async (req, res) => {
+  
+    // app.delete('/ourcar/delete/:id', async (req, res) => {
     //   const id = req.params.id;
     //   console.log(id);
     //   const query = { _id: ObjectId(id) };
