@@ -1,8 +1,5 @@
 
 //back-end
-//const uri = `mongodb+srv://${process.env.db_user}:${process.env.db_password}@cluster1.wjwlqun.mongodb.net/?retryWrites=true&w=majority`;
-
-
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const express = require('express');
@@ -11,8 +8,7 @@ const app = express();
 require('dotenv').config();
 const jwt = require('jsonwebtoken');
 
-//project-car
-//mHnTJCZufN9cBqQi
+
 
 const port = process.env.PORT || 5000;
 
